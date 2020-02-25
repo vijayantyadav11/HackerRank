@@ -1,0 +1,9 @@
+#https://www.hackerrank.com/challenges/py-set-union/problem?h_r=next-challenge&h_v=legacy
+
+
+m=input()
+s1 = set(map(int,input().split()))
+n=input()
+s2 = set(map(int,input().split()))
+s1=s1.union(s2)
+print(len(s1))
