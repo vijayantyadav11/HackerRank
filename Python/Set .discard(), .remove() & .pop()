@@ -1,0 +1,22 @@
+
+#https://www.hackerrank.com/challenges/py-set-discard-remove-pop/submissions/code/144385964
+
+
+n = int(input())
+s = set(map(int, input().split()))
+m = int(input())
+try:
+    for i in range(m):
+        a=input()
+        if a=="pop":
+            s.pop()
+        else:
+            x,y=a.split()
+            if x=="remove":
+                s.remove(int(y))
+            else:
+                s.discard(int(y))
+    print(sum(list(s)))
+
+except KeyError as e:
+    print(end="")
