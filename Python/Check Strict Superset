@@ -1,0 +1,13 @@
+
+#https://www.hackerrank.com/challenges/py-check-strict-superset/copy-from/144565692
+#flag used to count the no. of set subset of set s
+#if flag equals total no. of set input (except the prime set s)
+
+s = set(input().split())
+n=int(input())
+flag=0
+for i in range(n):
+    s1 = set(input().split())
+    if s.issuperset(s1):
+        flag+=1
+print(flag==n)
